@@ -1,6 +1,6 @@
 {
   "name": "node-red-javascript-interface-library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "auxiliary module to let Node-RED import the javascript-interface-library",
   "type": "module",
   "main": "./dist/node-red-javascript-interface-library.js",
