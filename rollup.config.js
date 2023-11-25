@@ -1,9 +1,10 @@
 // see https://github.com/rozek/build-configuration-study
 
+import typescript from '@rollup/plugin-typescript';
 import { terser } from 'rollup-plugin-terser'
 
 export default {
-  input: './src/node-red-javascript-interface-library.js',
+  input: './src/node-red-javascript-interface-library.ts',
   output: [
     {
       file:     './dist/node-red-javascript-interface-library.umd.js',
@@ -20,6 +21,10 @@ export default {
       format:   'iife',
       name:     'JIL',
       sourcemap:true,
+      plugins: [terser({ format:{ comments:false, safari10:true } })],
     }
+  ],
+  plugins: [
+    typescript(),
   ],
 };
