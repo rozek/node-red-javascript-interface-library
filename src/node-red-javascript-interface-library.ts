@@ -351,7 +351,7 @@
   export function ValueIsPlainObject (Value:any):boolean {
     return (
       (Value != null) && (typeof Value === 'object') &&
-      (Object.getPrototypeOf(Value) === Object.prototype)
+      (Value.constructor === Object)
     )
   }
 
