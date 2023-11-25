@@ -250,7 +250,7 @@ function ValueIsObject(Value) {
 /**** ValueIsPlainObject ****/
 function ValueIsPlainObject(Value) {
     return ((Value != null) && (typeof Value === 'object') &&
-        (Value.constructor === Object));
+        (Object.getPrototypeOf(Value) === Object.prototype));
 }
 /**** ValueIsVanillaObject ****/
 function ValueIsVanillaObject(Value) {
