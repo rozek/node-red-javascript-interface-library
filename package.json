@@ -2,11 +2,12 @@
   "name": "node-red-javascript-interface-library",
   "version": "1.0.2",
   "description": "auxiliary module to let Node-RED import the javascript-interface-library",
-  "type": "module",
-  "main": "./dist/node-red-javascript-interface-library.js",
+  "main": "./dist/node-red-javascript-interface-library.umd.js",
+  "module": "./dist/node-red-javascript-interface-library.esm.js",
+  "browser": "./dist/node-red-javascript-interface-library.iife.js",
   "exports": {
     ".": {
-      "require": "./dist/node-red-javascript-interface-library.js",
+      "require": "./dist/node-red-javascript-interface-library.umd.js",
       "import": "./dist/node-red-javascript-interface-library.esm.js"
     },
     "./package.json": "./package.json"
