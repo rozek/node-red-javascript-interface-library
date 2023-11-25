@@ -1,6 +1,6 @@
 {
   "name": "node-red-javascript-interface-library",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "auxiliary module to let Node-RED import the javascript-interface-library",
   "main": "./dist/node-red-javascript-interface-library.umd.js",
   "module": "./dist/node-red-javascript-interface-library.esm.js",
