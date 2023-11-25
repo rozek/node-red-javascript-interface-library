@@ -9,7 +9,7 @@ export default {
       file:     './dist/node-red-javascript-interface-library.js',
       format:    'umd', // builds for both Node.js and Browser
       name:      'JIL', // required for UMD modules
-      noConflict:true,
+      noConflict:false,
       sourcemap: true,
       plugins: [terser({ format:{ comments:false, safari10:true } })],
     },{
